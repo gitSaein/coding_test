@@ -9,7 +9,7 @@ public class StickLengthFunc {
 		
 		int inSize = in.length();
 		StackFunc stackFunc = new StackFunc(inSize);
-		while (in.isEmpty() != true) {
+		while (!in.isEmpty()) {
 			System.out.println("[Stick] Start Function...");
 			for(int i=0; i < inSize; i++) {
 				if(i == 0 || (i != 0 && in.charAt(i) == in.charAt(i-1))) {

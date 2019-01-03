@@ -22,7 +22,7 @@ public class StackFunc {
 	
 	public void push(char inStr) {
 		
-		if(this.isFull() == true && this.isEmpty() == false) {
+		if(this.isFull() && !this.isEmpty()) {
 			System.out.println("Stack is Full.");
 			return;
 		}else {
@@ -34,7 +34,7 @@ public class StackFunc {
 	}
 	
 	public char pop() {
-		if(this.isEmpty() == true) {
+		if(this.isEmpty()) {
 			System.out.println("Stack is Empty.");
 			return '0';
 		}else {
